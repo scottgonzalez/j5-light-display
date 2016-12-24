@@ -1,0 +1,41 @@
+{
+  "name": "light-display",
+  "version": "0.0.0",
+  "description": "Customized light displays using Johnny-Five",
+  "author": {
+    "name": "Scott González",
+    "email": "scott.gonzalez@gmail.com",
+    "url": "http://scottgonzalez.com"
+  },
+  "bugs": {
+    "url": "https://github.com/scottgonzalez/j5-light-display/issues"
+  },
+  "homepage": "https://github.com/scottgonzalez/j5-light-display",
+  "keywords": [
+    "johnny-five",
+    "light",
+    "display",
+    "custom",
+    "animation"
+  ],
+  "license": "MIT",
+  "main": "lib/light-display.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scottgonzalez/j5-light-display.git"
+  },
+  "scripts": {
+    "build": "babel src -d lib",
+    "lint": "standard src/**/*.js",
+    "prepublish": "npm run build",
+    "test": "npm run build && npm run lint"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-env": "^1.1.4",
+    "standard": "^8.6.0"
+  },
+  "peerDependencies": {
+    "johnny-five": "^0.10.6"
+  }
+}
