@@ -5,10 +5,10 @@ module.exports = (five) => {
   class LightDisplay {
     constructor (options) {
       if (Array.isArray(options)) {
-        options = { pins: options }
+        options = { segments: options }
       }
 
-      this.segments = options.pins.map((pin) => new Segment(pin))
+      this.segments = options.segments.map((segmentOptions) => new Segment(segmentOptions))
     }
 
     on () {
