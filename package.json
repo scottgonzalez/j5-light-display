@@ -1,6 +1,6 @@
 {
   "name": "light-display",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Customized light displays using Johnny-Five",
   "author": {
     "name": "Scott González",
