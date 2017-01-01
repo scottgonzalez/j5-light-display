@@ -22,7 +22,7 @@ module.exports = (five) => {
         })
     }
 
-    start (options = {}) {
+    start (options) {
       if (typeof options === 'string') {
         options = { name: options }
       }

@@ -1,17 +1,33 @@
 module.exports = (five) => {
   class Segment {
-    constructor (pin) {
-      this.pin = new five.Pin(pin)
+    constructor (options) {
+      if (typeof options !== 'object') {
+        options = { pin: options }
+      }
+
+      this.pin = new five.Pin(options.pin)
+      this.inverted = !!options.inverted
+
       this.off()
     }
 
     on () {
-      this.pin.low()
+      if (this.inverted) {
+        this.pin.low()
+      } else {
+        this.pin.high()
+      }
+
       this.isOn = true
     }
 
     off () {
-      this.pin.high()
+      if (this.inverted) {
+        this.pin.high()
+      } else {
+        this.pin.low()
+      }
+
       this.isOn = false
     }
 
