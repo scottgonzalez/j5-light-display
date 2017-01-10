@@ -6,7 +6,7 @@
 
 ```js
 const five = require('johnny-five')
-const LightDisplay = require('light-display')
+const LightDisplay = require('light-display')(five)
 
 const board = new five.Board()
 
