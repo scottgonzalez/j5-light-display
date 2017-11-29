@@ -114,7 +114,7 @@ Turns on all segments. This isn't really an animation, but is provided to simpli
 
 ### Sparkle
 
-Toggles segments randomly. The segments toggle at a random interval based on the specified minimum and maximum durations. Each step of the animation toggles a single segment, so the duratino that a segment is turned on or off is completely random and may be several times longer than the maximum duration defined for each step.
+Toggles segments randomly. The segments toggle at a random interval based on the specified minimum and maximum durations. Each step of the animation toggles a single segment, so the duration that a segment is turned on or off is completely random and may be several times longer than the maximum duration defined for each step.
 
 Options:
 * `minDelay` (Number; default: `200`): The minimum duration in milliseconds for each step.
