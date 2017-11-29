@@ -28,6 +28,12 @@ Four animations come bundled with `LightDisplay`:
 * [constant](doc/animation.md#constant): Turns on all segments (doesn't actually animate).
 * [sparkle](doc/animation.md#sparkle): Toggles segments randomly.
 
+## Documentation
+
+* [`Animation`](doc/animation.md)
+* [`LightDisplay`](doc/light-display.md)
+* [`Segment`](doc/segment.md)
+
 ## License
 
 Copyright Scott González. Released under the terms of the MIT license.
